@@ -18,11 +18,34 @@ namespace A4_RD_Quiz
     /// <summary>
     /// Interaction logic for MainWindow.xaml
     /// </summary>
+    /// 
+
     public partial class MainWindow : Window
     {
+        public int NameCheck (string boxContents)
+        {
+            if (boxContents != "")
+            {
+                return 1;
+            } else
+            {
+                return 0;
+            }
+        }
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void btn_Start_Click(object sender, RoutedEventArgs e)
+        {
+            if (NameCheck(tbx_NameEntry.Text) == 1)
+            {
+
+            } else
+            {
+
+            }
         }
     }
 }

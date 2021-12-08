@@ -5,11 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:A4_RD_Quiz"
         mc:Ignorable="d"
-        Title="Start Quiz" Height="200" Width="600" ResizeMode="NoResize" Topmost="True" Background="#FF00BB22">
+        Title="Start Quiz" Height="300" Width="600" ResizeMode="NoResize" Topmost="True" Background="#FF00BB22">
     <Grid>
-        <TextBox x:Name="tbx_NameEntry" HorizontalAlignment="Left" Height="30" Margin="17,122,0,0" TextWrapping="Wrap" Text="Name Entry" VerticalAlignment="Top" Width="450" FontSize="18" MaxLength="20"/>
-        <Label x:Name="lbl_Name" Content="Player Name" HorizontalAlignment="Left" Margin="17,78,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.848,0.476" Foreground="White"/>
-        <Button x:Name="btn_Start" Content="Start" HorizontalAlignment="Left" Margin="472,122,0,0" VerticalAlignment="Top" Width="104" Height="30" Click="btn_Start_Click"/>
+        <TextBox x:Name="tbx_NameEntry" HorizontalAlignment="Left" Height="30" Margin="17,195,0,0" TextWrapping="Wrap" Text="Name Entry" VerticalAlignment="Top" Width="450" FontSize="18" MaxLength="20" FontFamily="Nirmala UI"/>
+        <Label x:Name="lbl_Name" Content="Player Name" HorizontalAlignment="Left" Margin="17,151,0,0" VerticalAlignment="Top" FontSize="22" RenderTransformOrigin="0.848,0.476" Foreground="White" FontFamily="Nirmala UI"/>
+        <Button x:Name="btn_Start" Content="Start" HorizontalAlignment="Left" Margin="472,195,0,0" VerticalAlignment="Top" Width="104" Height="30" Click="btn_Start_Click"/>
+        <Label x:Name="lbl_NameError" Content="ERROR" HorizontalAlignment="Left" Margin="17,230,0,0" VerticalAlignment="Top" Width="450" Foreground="#FFDC0000" FontSize="16" FontFamily="Nirmala UI" Visibility="Hidden"/>
 
     </Grid>
 </Window>

@@ -1,0 +1,5 @@
+C:\Users\maxpa\Source\Repos\RD_A4_Quiz\obj\Debug\A4_RD_Quiz.csproj.AssemblyReference.cache
+C:\Users\maxpa\Source\Repos\RD_A4_Quiz\obj\Debug\MainWindow.g.cs
+C:\Users\maxpa\Source\Repos\RD_A4_Quiz\obj\Debug\App.g.cs
+C:\Users\maxpa\Source\Repos\RD_A4_Quiz\obj\Debug\A4_RD_Quiz_MarkupCompile.cache
+C:\Users\maxpa\Source\Repos\RD_A4_Quiz\obj\Debug\A4_RD_Quiz_MarkupCompile.lref

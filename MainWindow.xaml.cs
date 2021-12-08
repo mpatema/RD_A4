@@ -41,10 +41,13 @@ namespace A4_RD_Quiz
         {
             if (NameCheck(tbx_NameEntry.Text) == 1)
             {
+                lbl_NameError.Visibility = Visibility.Hidden;
+                // open page for questions
 
             } else
             {
-
+                lbl_NameError.Visibility = Visibility.Visible;
+                lbl_NameError.Content = "Please enter a name before starting the game.";
             }
         }
     }

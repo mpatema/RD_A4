@@ -43,6 +43,9 @@ namespace A4_RD_Quiz
             {
                 lbl_NameError.Visibility = Visibility.Hidden;
                 // open page for questions
+                GameWindow newGame = new GameWindow();
+                this.Hide();
+                newGame.Show();
 
             } else
             {

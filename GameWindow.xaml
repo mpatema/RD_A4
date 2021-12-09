@@ -1,0 +1,17 @@
+﻿<Window x:Name="newgame" x:Class="A4_RD_Quiz.GameWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A4_RD_Quiz"
+        mc:Ignorable="d"
+        Title="GameWindow" Height="400" Width="500" Background="#FF0390E0" Foreground="White">
+    <Grid>
+        <Label x:Name="lbl_activeQuestion" Content="QUESTIONABEL" Margin="29,46,0,0" VerticalAlignment="Top" FontSize="25" Height="101" Foreground="White" HorizontalAlignment="Left" Width="441"/>
+        <RadioButton x:Name="rdb_OptionA" Content="OptionA" HorizontalAlignment="Left" Margin="29,178,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Checked="rdb_OptionA_Checked" Width="441"/>
+        <RadioButton x:Name="rdb_OptionB" Content="OptionB" HorizontalAlignment="Left" Margin="29,214,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Width="441" Checked="rdb_OptionB_Checked"/>
+        <RadioButton x:Name="rdb_OptionC" Content="OptionC" HorizontalAlignment="Left" Margin="29,250,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Width="453" Checked="rdb_OptionC_Checked"/>
+        <RadioButton x:Name="rdb_OptionD" Content="OptionD" HorizontalAlignment="Left" Margin="29,286,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Width="453" Checked="rdb_OptionD_Checked"/>
+
+    </Grid>
+</Window>

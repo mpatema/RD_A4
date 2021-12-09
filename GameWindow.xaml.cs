@@ -21,6 +21,8 @@ namespace A4_RD_Quiz
     {
         int gameProgress;
         int currentQuestionID;
+        List<int> progressList = new List<int>();
+        Random rnd = new Random();
 
         public GameWindow()
         {
@@ -30,16 +32,19 @@ namespace A4_RD_Quiz
         private void rdb_OptionA_Checked(object sender, RoutedEventArgs e)
         {
             EvaluateAnswer('A', currentQuestionID);
+            NextQuestion(gameProgress);
         }
 
         private void rdb_OptionB_Checked(object sender, RoutedEventArgs e)
         {
             EvaluateAnswer('B', currentQuestionID);
+            NextQuestion(gameProgress);
         }
 
         private void rdb_OptionC_Checked(object sender, RoutedEventArgs e)
         {
             EvaluateAnswer('C', currentQuestionID);
+            NextQuestion(gameProgress);
         }
 
         private void rdb_OptionD_Checked(object sender, RoutedEventArgs e)
@@ -60,7 +65,20 @@ namespace A4_RD_Quiz
         {
             //increment question progress.
             gameProgress = currentProgress++;
-            //set currentQuestionID to next question's ID.
+
+            //add currentQuestionID to a 'read' list.
+            for (int i = 0; i > progressList.Count; i++) {
+                int tmpQNum = rnd.Next(0, 11);
+                if (tmpQNum != progressList[i])
+                {
+                    return;
+                }
+            }
+            //set currentQuestionID to next question's ID...
+            //...generate a random number between 1 and 10 and assign it to the next question (representing the ID of the new question).
+            //check this temporary new number in comparison to what's in our 'read' list and regenerate if necessary.
+
+            //change possible answers to align with that of the new question.
 
         }
     }

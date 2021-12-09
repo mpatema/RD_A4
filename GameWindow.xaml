@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="GameWindow" Height="400" Width="500" Background="#FF0390E0" Foreground="White">
     <Grid>
-        <Label x:Name="lbl_activeQuestion" Content="QUESTIONABEL" Margin="29,46,0,0" VerticalAlignment="Top" FontSize="25" Height="101" Foreground="White" HorizontalAlignment="Left" Width="441"/>
+        <Label x:Name="lbl_activeQuestion" Content="QUESTIONLABEL" Margin="29,46,0,0" VerticalAlignment="Top" FontSize="25" Height="101" Foreground="White" HorizontalAlignment="Left" Width="431"/>
         <RadioButton x:Name="rdb_OptionA" Content="OptionA" HorizontalAlignment="Left" Margin="29,178,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Checked="rdb_OptionA_Checked" Width="441"/>
         <RadioButton x:Name="rdb_OptionB" Content="OptionB" HorizontalAlignment="Left" Margin="29,214,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Width="441" Checked="rdb_OptionB_Checked"/>
         <RadioButton x:Name="rdb_OptionC" Content="OptionC" HorizontalAlignment="Left" Margin="29,250,0,0" VerticalAlignment="Top" FontSize="24" Foreground="White" Width="453" Checked="rdb_OptionC_Checked"/>

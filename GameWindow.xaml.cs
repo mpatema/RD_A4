@@ -67,17 +67,22 @@ namespace A4_RD_Quiz
             gameProgress = currentProgress++;
 
             //add currentQuestionID to a 'read' list.
-            for (int i = 0; i > progressList.Count; i++) {
+
+            //set currentQuestionID to next question's ID...
+            for (int i = 0; i == progressList.Count; i++) {
+            //...generate a random number between 1 and 10 and assign it to the next question (representing the ID of the new question).
+
                 int tmpQNum = rnd.Next(0, 11);
+            //check this temporary new number in comparison to what's in our 'read' list and regenerate if necessary.
                 if (tmpQNum != progressList[i])
                 {
                     return;
+                } else
+                {
+                    break;
                 }
             }
-            //set currentQuestionID to next question's ID...
-            //...generate a random number between 1 and 10 and assign it to the next question (representing the ID of the new question).
-            //check this temporary new number in comparison to what's in our 'read' list and regenerate if necessary.
-
+            
             //change possible answers to align with that of the new question.
 
         }
